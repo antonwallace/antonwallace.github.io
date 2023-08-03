@@ -14,16 +14,22 @@
 
     <title>TECHvet - Home</title>
   </head>
-  <body class="dark">
-    <div class="navbar dark" id="navbar">
-      <img src="media/img/placeholder-40.png" alt="TECHvet Logo" class="nav-item dark img" />
-      <a class="nav-item dark active"> Home</a>
-      <a href="pages/about.html" class="nav-item dark">About</a>
-      <a href="pages/products.html" class="nav-item dark">Products</a>
+  <body class="a">
+    <div class="navbar" id="navbar">
+      <img src="media/img/placeholder-40.png" alt="TECHvet Logo" class="nav-item img" />
+      <a class="nav-item active"> Home</a>
+      <a href="pages/about.html" class="nav-item">About</a>
+      <a href="pages/products.html" class="nav-item">Products</a>
+      <div class="theme-switch-container">
+        <input type="checkbox" class="checkbox" id="checkbox">
+        <label for="checkbox" class="checkbox-label">
+          <i id="theme-toggle-icon" class="fa-solid fa-sun-haze fa-fw theme-toggle"></i>
+        </label>
+      </div>
       <a
         href="javascript:void(0);"
-        class="icon dark"
-        onclick="mobileNavSwitch()"
+        class="icon"
+        onclick="toggleMobileNav()"
       >
         <i class="fa fa-bars"></i>
       </a>
